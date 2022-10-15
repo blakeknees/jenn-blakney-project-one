@@ -2,25 +2,20 @@
 @use "./partials/variables";
 @use "./partials/typography";
 @use "./partials/global";
-@use "./partials/nav";
-@use "./partials/header";
-@use "./partials/categories";
-@use "./partials/media-queries";
+@use "./partials/home/media-queries";
 
 // COLOURS:
-// primary text (blue): #084b6d;
-// secondary (light blue): #f4fcff;
-// tertiary (green): #f8fbf3; 
-// quaternary (pink): #fff5f5; 
-// quinary (orange): #ffd698;
-// pastel blue: #d3f0f9 
-// white: #fff; 
-
-
+// primary text (dandelion): #FDD908;
+// secondary (twilight blue): #0D457F;
+// tertiary (white): #FFFFFF;
 
 // HEADINGS:
-// h1: 28px;
-// h2: 40px;
-// h3: 54px;
-// h4: 34px;
-// h5: 14px;
+// h1: 79px;
+// h2: 45px;
+// h3: 40px;
+// h4: 25px;
+
+// OTHER TEXT:
+// button: 22.4px;
+// nav: 29px;
+// body text: 20px;
