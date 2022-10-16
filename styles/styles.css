@@ -389,6 +389,10 @@ a {
   max-width: 1260px;
 }
 
+header {
+  background-image: url("../assets/home-header.jpg");
+}
+
 button {
   color: #0D457F;
   background-color: #FDD908;
@@ -468,4 +472,34 @@ a.button:focus {
 img {
   max-width: 100%;
   display: block;
+}
+
+header {
+  background: #FFFFFF;
+}
+header .header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-flex .nav-bar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header-flex .nav-bar-flex li {
+  display: inline-block;
+}
+header img {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  right: -500px;
 }

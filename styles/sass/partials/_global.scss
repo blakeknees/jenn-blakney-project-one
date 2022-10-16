@@ -8,6 +8,10 @@
     max-width: 1260px;
 }
 
+header {
+    background-image: url('../assets/home-header.jpg');
+}
+
 button {
     color: variables.$secondary;
     background-color: variables.$primary;

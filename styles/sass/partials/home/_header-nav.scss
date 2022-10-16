@@ -1,0 +1,27 @@
+@use "../variables";
+@use "../global";
+
+header {
+    background: variables.$tertiary;
+
+    .header-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .nav-bar-flex {
+            display: flex;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 400px;
+        position: relative;
+        right: -500px;
+    }
+}
