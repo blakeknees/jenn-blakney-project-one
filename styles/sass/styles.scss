@@ -2,8 +2,9 @@
 @use "./partials/variables";
 @use "./partials/typography";
 @use "./partials/global";
-@use "./partials/home/media-queries";
-@use "./partials/home/header-nav";
+@use "./partials/home-main";
+@use "./partials/home-header-nav";
+@use "./partials/home-media-queries";
 
 // COLOURS:
 // primary text (dandelion): #FDD908;

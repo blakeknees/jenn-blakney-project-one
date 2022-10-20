@@ -2,18 +2,62 @@
 
 @use "./variables";
 
+html {
+    font-size: 125%;
+}
+
 .wrapper {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    max-width: 1260px;
+    max-width: 1500px;
 }
 
 header {
     background-image: url('../assets/home-header.jpg');
 }
 
-button {
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-family: variables.$heading-font;
+}
+
+nav, p {
+    font-family: 'Roboto';
+}
+
+p {
+    font-size: 400;
+}
+
+footer {
+    background-color: variables.$primary;
     color: variables.$secondary;
+    font-family: 'Roboto';
+    font-weight: 400;
+    
+    p {
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+// SET FONT SIZES!
+
+// HEADINGS:
+// h1: 79px;
+// h2: 45px;
+// h3: 40px;
+// h4: 25px;
+
+// OTHER TEXT:
+// button: 22.4px;
+// nav: 29px;
+// body text: 20px;
+
+button {
+    font-family: variables.$heading-font;
+    color: variables.$secondary;
+    text-transform: uppercase;
     background-color: variables.$primary;
     padding: 18px 36px;
     border: 2px solid variables.$primary;
@@ -104,5 +148,4 @@ a {
 
 img {
     max-width: 100%;
-    display: block;
 }

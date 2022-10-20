@@ -1,0 +1,11 @@
+@use "./variables";
+@use "./global";
+@use "./home-header-nav";
+@use "./home-main";
+
+
+@media (max-width: 1400px) {
+    .yacht-img {
+        max-width: 55%;
+    }
+}
