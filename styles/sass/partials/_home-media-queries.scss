@@ -3,9 +3,26 @@
 @use "./home-header-nav";
 @use "./home-main";
 
+// ORIGINAL STYLES ARE SET FOR 1900PX MONITOR
 
+
+// LAPTOP
 @media (max-width: 1400px) {
     .yacht-img {
         max-width: 55%;
+    }
+}
+
+// TABLET
+@media (max-width: 900px) {
+    .yacht-img {
+        display: none;
+    }
+}
+
+// PHONE
+@media (max-width: 500px) {
+    .yacht-img {
+        display: none;
     }
 }
