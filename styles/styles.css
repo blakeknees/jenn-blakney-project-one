@@ -372,12 +372,6 @@ html {
   font-size: 125%;
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1500px;
-}
-
 header {
   background-image: url("../assets/home-header.jpg");
 }
@@ -385,6 +379,10 @@ header {
 h1, h2, h3, h4 {
   text-transform: uppercase;
   font-family: "IM_Fell_English";
+}
+
+img {
+  max-width: 100%;
 }
 
 nav, p {
@@ -404,6 +402,31 @@ footer {
 footer p {
   padding: 15px 0;
   text-align: center;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1750px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 button {
@@ -482,17 +505,6 @@ a.button:hover {
 a.button:focus {
   background-color: #FDD908;
   color: #FFFFFF;
-}
-
-img {
-  max-width: 100%;
-}
-
-.yacht-img {
-  position: absolute;
-  top: 8rem;
-  right: 0;
-  max-width: 55%;
 }
 
 .links-container {
@@ -643,6 +655,9 @@ img {
   color: black;
   margin: 25px 0;
 }
+.win-trip-container .cove-pic {
+  width: 100%;
+}
 .win-trip-container .win-trip-img {
   margin-right: 3rem;
 }
@@ -674,20 +689,17 @@ header {
   background-size: cover;
   background-position: center;
 }
-header .header-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .flex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-header .header-flex .nav-bar-flex {
+header .flex .nav-bar-flex {
   width: 40%;
   margin-top: 40px;
 }
-header .header-flex .nav-bar-flex ul {
+header .flex .nav-bar-flex ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,35 +707,93 @@ header .header-flex .nav-bar-flex ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .header-flex .nav-bar-flex li {
+header .flex .nav-bar-flex li {
   color: #FFFFFF;
   font-size: 1.2rem;
 }
-header .header-flex .nav-bar-flex li a:hover {
+header .flex .nav-bar-flex li a:hover {
   margin: 2px;
-  /* NEED MARGIN BETWEEN LINK AND BORDER */
   border-bottom: 3px solid #FDD908;
 }
-header .header-flex .header-text h1 {
-  font-size: 3.75rem;
-  margin-top: 25%;
+header .flex .flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100vw;
 }
-header .header-flex .header-text span {
+header .flex .header-text h1 {
+  font-size: 3.75rem;
+  margin-top: 75%;
+}
+header .flex .header-text span {
   display: block;
+}
+header .flex .yacht-img {
+  margin-bottom: -12rem;
+  width: 100vw;
 }
 
 @media (max-width: 1400px) {
   .yacht-img {
-    max-width: 55%;
+    max-width: 50rem;
   }
 }
 @media (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+  .header-text {
+    text-align: center;
+  }
   .yacht-img {
     display: none;
   }
 }
 @media (max-width: 500px) {
+  .header-text {
+    text-align: center;
+  }
   .yacht-img {
     display: none;
   }
+}
+header {
+  background-image: url("../assets/blog-header.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+header .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .flex .nav-bar-flex {
+  width: 40%;
+  margin-top: 40px;
+}
+header .flex .nav-bar-flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header .flex .nav-bar-flex li {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+header .flex .nav-bar-flex li a:hover {
+  margin: 2px;
+  border-bottom: 3px solid #FDD908;
+}
+header .flex .header-text h1 {
+  font-size: 3.75rem;
+  margin-top: 75%;
 }

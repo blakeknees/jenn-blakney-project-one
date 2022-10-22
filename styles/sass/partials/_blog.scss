@@ -2,7 +2,7 @@
 @use "./global";
 
 header {
-    background-image: url(../assets/home-header.jpg);
+    background-image: url('../assets/blog-header.jpg');
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -10,46 +10,31 @@ header {
     .flex {
         flex-direction: column;
         // justify-content: space-between;
-
+    
         .nav-bar-flex {
             width: 40%;
             margin-top: 40px;
-
+    
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
             }
-
+    
             li {
                 color: variables.$tertiary;
                 font-size: 1.2rem;
             }
-
+    
             li a:hover {
                 margin: 2px;
                 border-bottom: 3px solid variables.$primary;
             }
         }
-
-        .flex {
-            flex-direction: row;
-            align-items: flex-end;
-            width: 100vw;
-        }
-        
         .header-text {
             h1 {
                 font-size: 3.75rem;
                 margin-top: 75%;
             }
-            span {
-                display: block;
-            }
-        }
-        .yacht-img {
-            margin-bottom: -12rem;
-            width: 100vw;
         }
     }
 }
-

@@ -6,12 +6,6 @@ html {
     font-size: 125%;
 }
 
-.wrapper {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1500px;
-}
-
 header {
     background-image: url('../assets/home-header.jpg');
 }
@@ -19,6 +13,10 @@ header {
 h1, h2, h3, h4 {
     text-transform: uppercase;
     font-family: variables.$heading-font;
+}
+
+img {
+    max-width: 100%;
 }
 
 nav, p {
@@ -39,6 +37,25 @@ footer {
         padding: 15px 0;
         text-align: center;
     }
+}
+
+// CLASSES
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1750px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 // SET FONT SIZES!
@@ -146,6 +163,3 @@ a {
     }
 }
 
-img {
-    max-width: 100%;
-}

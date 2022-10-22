@@ -4,13 +4,6 @@
 
 // OFFSET YACHT
 
-.yacht-img {
-    position: absolute;
-    top: 8rem;
-    right: 0;
-    max-width: 55%;
-}
-
 // LINKS CONTAINER (new destinations, blog, community, get in touch)
 
 .links-container {
@@ -150,6 +143,10 @@
             color: black;
             margin: 25px 0;
         }
+    }
+
+    .cove-pic {
+        width: 100%
     }
 
     .win-trip-img {

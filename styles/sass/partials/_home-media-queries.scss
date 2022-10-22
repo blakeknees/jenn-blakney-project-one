@@ -3,18 +3,26 @@
 @use "./home-header-nav";
 @use "./home-main";
 
-// ORIGINAL STYLES ARE SET FOR 1900PX MONITOR
+// ORIGINAL STYLES ARE SET FOR 1750PX MONITOR
 
 
 // LAPTOP
 @media (max-width: 1400px) {
     .yacht-img {
-        max-width: 55%;
+        max-width: 50rem;
     }
 }
 
 // TABLET
 @media (max-width: 900px) {
+    .wrapper {
+        width: 80%;
+    }
+    
+    // HEADER NAV
+    .header-text {
+        text-align: center;
+    }
     .yacht-img {
         display: none;
     }
@@ -22,6 +30,10 @@
 
 // PHONE
 @media (max-width: 500px) {
+    // HEADER NAV
+    .header-text {
+        text-align: center;
+    }
     .yacht-img {
         display: none;
     }
