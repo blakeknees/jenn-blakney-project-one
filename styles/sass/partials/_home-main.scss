@@ -70,7 +70,7 @@
         }
     
     .locations-box {
-        justify-content: right;
+        justify-content: flex-end;
     }
 
     .feat-img-1,
@@ -83,7 +83,7 @@
         color: variables.$primary;
         top: -7.5rem;
         left: -7.5rem;
-        box-shadow: 50px 50px 10px;
+        box-shadow: 10px 10px variables.$primary;
     }
     
     .feat-img-2 img {
@@ -91,7 +91,7 @@
         color: variables.$primary;    
         bottom: -7.5rem;
         right: -7.5rem;
-        box-shadow: 50px 50px 10px;
+        box-shadow: 10px 10px variables.$primary;
     }
 }
 

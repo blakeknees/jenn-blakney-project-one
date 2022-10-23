@@ -1,13 +1,7 @@
-// UPDATE WITH MY VARIABLES!!!
-
 @use "./variables";
 
 html {
     font-size: 125%;
-}
-
-header {
-    background-image: url('../assets/home-header.jpg');
 }
 
 h1, h2, h3, h4 {
@@ -93,73 +87,4 @@ button {
         background-color: variables.$primary;
         color: variables.$tertiary;
     }
-
-
-// IDK if code below applies to me so cross-reference with code along HTML    
-    &.secondary {
-        background-color: variables.$primary;
-        border-color: variables.$tertiary;
-        color: variables.$tertiary;
-        padding: 8px 12px;
-
-        &:hover {
-            background-color: variables.$tertiary;
-            color: variables.$primary;
-        }
-
-        &:focus {
-            background-color: variables.$tertiary;
-            color: variables.$primary;
-        }
-    }
-
-    &.solid {
-        color: variables.$tertiary;
-        background-color: variables.$primary;
-
-        &:hover {
-            color: variables.$primary;
-            background-color: variables.$tertiary;
-        }
-    }
-
-    /* style the button in the main nav menu to look just like an icon */
-    &.menu-icon {
-        display: inherit;
-        padding: 0;
-        border: none;
-
-        &:hover {
-            background-color: transparent;
-        }
-
-        &:focus {
-            background-color: transparent;
-        }
-    }
 }
-
-a {
-    &.button {
-        color: variables.$primary;
-        background-color: transparent;
-        padding: 18px 36px;
-        border: 2px solid variables.$primary;
-        font-size: 0.8rem;
-        font-weight: bold;
-        line-height: 1.2rem;
-        text-align: center;
-        transition: 0.3s;
-
-        &:hover {
-            background-color: variables.$primary;
-            color: variables.$tertiary;
-        }
-
-        &:focus {
-            background-color: variables.$primary;
-            color: variables.$tertiary;
-        }
-    }
-}
-

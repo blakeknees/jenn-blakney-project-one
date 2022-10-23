@@ -1,40 +1,147 @@
 @use "./variables";
 @use "./global";
 
-header {
-    background-image: url('../assets/blog-header.jpg');
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
+// HEADER NAV
 
-    .flex {
-        flex-direction: column;
-        // justify-content: space-between;
-    
-        .nav-bar-flex {
-            width: 40%;
-            margin-top: 40px;
-    
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-            }
-    
-            li {
-                color: variables.$tertiary;
-                font-size: 1.2rem;
-            }
-    
-            li a:hover {
-                margin: 2px;
-                border-bottom: 3px solid variables.$primary;
-            }
-        }
-        .header-text {
-            h1 {
-                font-size: 3.75rem;
-                margin-top: 75%;
+header {
+    .blog-nav {
+        background-image: url('../assets/blog-header.jpg');
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        
+        .flex {
+            flex-direction: column;
+            // justify-content: space-between;
+        
+            .nav-bar-flex {
+                width: 40%;
+                margin-top: 40px;
+        
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    }
+        
+                    li {
+                        color: variables.$tertiary;
+                        font-size: 1.2rem;
+                    }
+        
+                    li a:hover {
+                        margin: 2px;
+                        border-bottom: 3px solid variables.$primary;
+                    }
+                }
+        
+            .contact-header-text {
+                h1 {
+                    font-size: 4rem;
+                    color: variables.$tertiary
+                }
             }
         }
     }
+    
+}
+
+// MAIN 
+main {
+    background-color: variables.$background-1;
+
+    h2 {
+        color: variables.$secondary;
+    }
+    
+    p {
+        color: black;
+    }
+
+
+// CONTENT CONTAINER 
+    .flex {
+        justify-content: space-between;
+    }
+
+// BLOG NAV (left box)
+    .blog-nav-container {
+        background-color: variables.$background-2;
+        margin-left: 25%;
+        margin-right: 10%;
+        margin-top: 10%;
+        
+        img {
+            transform: translate(-3rem, -4ex);
+        }
+    }
+
+    .blog-nav-box {
+        padding: 40px;
+
+        p {
+            color: variables.$tertiary;
+        }
+    }
+
+// POST CONTAINER (right box)
+    .post-container {
+        margin-left: 6rem;
+        border-left: 3px solid variables.$primary;
+        border-bottom: 3px solid variables.$primary;
+        img {
+            border: 10px solid variables.$primary;
+        }
+        .text-container {
+            padding: 30px 50px 50px 80px;
+        }
+    }
+
+    .recent-posts {
+        li {
+            list-style: circle;
+        }
+        
+    }
+
+    // COMMENT SECTION
+    .comment-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .comment-container .flex-column {
+            align-items: flex-end;
+        }
+
+        .comment-1, .comment-2 {
+            // padding: 40px 0;
+
+            .comment-pic {
+                margin-right: 20px;
+            }
+            
+            .text-container {
+                width: 80%;
+            }
+        }
+    }   
+}
+
+
+.img-text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feat-img-1,
+.programs-box,
+.feat-img-2,
+.locations-box {
+    min-width: 360px;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.locations-box {
+    justify-content: right;
 }

@@ -3,7 +3,7 @@
 
 header {
     background-image: url(../assets/home-header.jpg);
-    height: 80vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
 
@@ -47,8 +47,9 @@ header {
             }
         }
         .yacht-img {
-            margin-bottom: -12rem;
-            width: 100vw;
+            position: absolute;
+            top: 10rem;
+            right: -1rem
         }
     }
 }

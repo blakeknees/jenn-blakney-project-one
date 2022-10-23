@@ -18,98 +18,134 @@
     
     <!-- Header Nav -->
     <header>
-        <div class="flex wrapper">
-            <nav class="nav-bar-flex">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <section class="blog-nav">
+            <div class="flex wrapper">
+                <nav class="nav-bar-flex">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             
-            <div class="header-text">
                 <h1>Blog</h1>
-            </div>
-        </div> <!-- END .flex .wrapper-->
+            
+            </div> <!-- END .flex .wrapper-->
+        </section> <!-- END .blog-nav -->
     </header>
         
     <main>
 
         <!-- Content Container -->
-        <section class="content-container">
-            <aside>
-                <div class="blog-nav-container">
-                    <img src="./project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/blog-side-image.jpg"
-                        alt="The deck of a large sail boat">
-                
-                    <!-- Blog Nav Box on Left-->
-                    <div class="blog-nav-box">
-                        <div class="our-mission">
-                            <h3>Our Mission</h3>
-                            <p>Nam dapibus nis vitae elit
-                                fringilla rutrum.
-                                Aenean
-                                erat a elementum.</p>
-                            <a href="#">Find out more</a>
-                        </div>
-                
-                        <div class="recent-posts">
-                            <h3>Recent Posts</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Donec facilisis tortor ut</a>
-                                </li>
-                                <li>
-                                    <a href="#">Auguelacinia at viverra</a>
-                                </li>
-                                <li>
-                                    <a href="#">Semper sed sapien metus</a>
-                                </li>
-                                <li>
-                                    <a href="#">Scelerisque nec pharetra id</a>
-                                </li>
-                            </ul>
-                        </div> <!-- END .recent-posts-->
-                    </div> <!-- END .blog-nav-box -->
-                </div> <!-- END .blog-nav-->
-            </aside>
+        <div class="flex">
+            <section>
+                <aside>
+                    <div class="blog-nav-container">
+                        <img src="./assets/blog-side-image.jpg" alt="The deck of a large sail boat">
             
+                        <!-- BLOG NAV Box on Left-->
+                        <div class="blog-nav-box">
+                            <div class="our-mission">
+                                <h4>Our Mission</h4>
+                                <p>Nam dapibus nis vitae elit
+                                    fringilla rutrum.
+                                    Aenean
+                                    erat a elementum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolores
+                                    excepturi cum nam ipsam aperiam veritatis tempore placeat enim ullam, laborum vero quis quasi
+                                    libero deleniti minus vel, nesciunt fugiat!</p>
+                                <a href="#">Find out more</a>
+                            </div> <!-- END .our-mission -->
+            
+                            <div class="recent-posts">
+                                <h4>Recent Posts</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Donec facilisis tortor ut</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Auguelacinia at viverra</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Semper sed sapien metus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Scelerisque nec pharetra id</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- END .recent-posts-->
+                        </div> <!-- END .blog-nav-box -->
+                    </div> <!-- END .blog-nav-container -->
+                </aside>
+            </section> <!-- END Blog Nav Section -->
+            
+            <!-- NEXT DESTINATION (Post Container on Right) -->
+            <section>
+                <div class="post-container">
+                    <img src="./assets/blog-post-image.jpg" alt="The tip of a mint green boat on the water">
+                    
+                    <div class="text-container">
+                        <h2>Next Destination</h2>
+                        <p>Mondav October 30 2019 by Sulaire</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi possimus, iure rerum magnam hic
+                            ullam? Natus rerum eum obcaecati ab, tempora recusandae earum! Cupiditate exercitationem rerum corrupti
+                            atque
+                            laboriosam!
+                            Consequuntur neque non cupiditate laborum iusto dolores nobis sapiente dignissimos placeat eligendi
+                            repudiandae
+                            esse sit exercitationem accusamus inventore, amet doloribus tempore nam, reiciendis, aperiam aspernatur sunt
+                            excepturi. Incidunt, dolor cum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum fugit deserunt quisquam sunt harum
+                            dignissimos, pariatur provident repudiandae ratione adipisci distinctio voluptatibus voluptatum?
+                            Praesentium,
+                            voluptates magni. Tempore, voluptas doloremque.
+                            Similique ipsa possimus amet praesentium ad hic laboriosam debitis, alias architecto eligendi dignissimos
+                            consequatur voluptate animi incidunt enim accusantium. Cum, atque minima. Quos corrupti ipsa inventore,
+                            incidunt
+                            ducimus quas ex.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi numquam tempora optio suscipit
+                            ducimus
+                            quod alias ipsa nesciunt doloribus, nobis quis repellendus voluptates voluptatibus aliquid repellat odio
+                            vitae
+                            consequatur?
+                            Error est dignissimos laborum accusantium, magnam nemo reprehenderit, delectus rerum a eius, officiis
+                            laudantium
+                            obcaecati! Vero hic iste perspiciatis laboriosam voluptates labore enim eius pariatur animi quis? Quidem,
+                            recusandae sed!</p>
+                    </div> <!-- END .text-container -->
+                </div> <!-- END .post-container -->
+            </section> <!-- END Next Destination section -->
+        </div> <!-- END .flex -->
 
-            <!-- Post Container on Right-->
-            <div class="post-container">
-                <img src="./project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/blog-post-image.jpg" alt="The tip of a mint green boat on the water">
-
-                <h2>Next Destination</h2>
-                <p>Mondav October 30 2019 by Sulaire</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi possimus, iure rerum magnam hic ullam? Natus rerum eum obcaecati ab, tempora recusandae earum! Cupiditate exercitationem rerum corrupti atque laboriosam!
-                Consequuntur neque non cupiditate laborum iusto dolores nobis sapiente dignissimos placeat eligendi repudiandae esse sit exercitationem accusamus inventore, amet doloribus tempore nam, reiciendis, aperiam aspernatur sunt excepturi. Incidunt, dolor cum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum fugit deserunt quisquam sunt harum dignissimos, pariatur provident repudiandae ratione adipisci distinctio voluptatibus voluptatum? Praesentium, voluptates magni. Tempore, voluptas doloremque.
-                Similique ipsa possimus amet praesentium ad hic laboriosam debitis, alias architecto eligendi dignissimos consequatur voluptate animi incidunt enim accusantium. Cum, atque minima. Quos corrupti ipsa inventore, incidunt ducimus quas ex.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi numquam tempora optio suscipit ducimus quod alias ipsa nesciunt doloribus, nobis quis repellendus voluptates voluptatibus aliquid repellat odio vitae consequatur?
-                Error est dignissimos laborum accusantium, magnam nemo reprehenderit, delectus rerum a eius, officiis laudantium obcaecati! Vero hic iste perspiciatis laboriosam voluptates labore enim eius pariatur animi quis? Quidem, recusandae sed!</p>
-            </div>
-        </section>
-
-        <!-- Commment Section -->
+        <!-- COMMENT SECTION -->
         <section class="comment-section">
-            <div class="comment-container">
+            <div class="comment-container flex-colum wrapper">
+
                 <h2>Comments:</h2>
-                <div class="comment-1">
-                    <img src="./project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/comment-1.jpg" alt="User picture of a commenter with short hair and gentle expression" class="comment-pic">
+
+                <div class="comment-1 flex">
+                    <div class="comment-pic">
+                        <img src="./assets/comment-1.jpg" alt="User picture of a commenter with short hair and gentle expression">
+                    </div>
+
                     <div class="text-container">
                         <p>Tuesday October 9, 2022 by Ali</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae illum quam veniam? Aut quia molestias eligendi dolores sunt esse quas, optio architecto quam veritatis unde culpa similique nihil blanditiis id.</p>
                     </div>
-                </div>
+                </div> <!-- END .comment-1 -->
 
-                <div class="comment-2">
-                    <img src="./project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/comment-2.jpg" alt="User picture of a commenter with long hair and big smile" class="comment-pic">
+                <div class="comment-2 flex">
+                    <div class="comment-pic">
+                        <img src="./assets/comment-2.jpg" alt="User picture of a commenter with long hair and big smile">
+                    </div>
+
                     <div class="text-container">
                         <p>Wednesday October 10th, 2022 by Lisa</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quaerat iure aliquid quas doloribus. Iusto fugit quam quas distinctio voluptatem. Quia ipsum numquam dicta. Quo, asperiores? Fugit quia facere delectus?</p>
                     </div>
-                </div>
+                </div> <!-- END .comment-2 -->
+
+                <!-- comment form -->
                 <form action="" class="submit-comment">
                     <div class="name-email">
                         <input type="text" placeholder="Name" id="name">
