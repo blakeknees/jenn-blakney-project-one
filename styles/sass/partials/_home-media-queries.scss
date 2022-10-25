@@ -7,34 +7,337 @@
 
 
 // LAPTOP
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
+    // HEADER
     .yacht-img {
-        max-width: 50rem;
+        width: 60%;
+    }
+
+    // MAIN
+    
+    // Links Section
+    .links-container {
+        .links {
+            margin-bottom: 4rem;
+
+            .items {
+                padding: 2rem;
+            }
+        }
+    }
+    
+    // FEATURES CONTAINER (OUR PROGRAM/NEW LOCATIONS)
+    
+    .features-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .feat-img-1 img {
+            top: -6rem;
+            left: -4rem;
+        }
+        .programs-box {
+            padding-left: 1rem;
+        }
+        
+        .feat-img-2 img {
+            bottom: -6rem;
+            right: -4.5rem;
+        }
+        .locations-box {
+            padding-right: 6rem;
+        
+        }
+    }
+
+    // EXTRA VACATION DAYS?
+    .vacation-container {
+        padding: 5rem 6rem 2rem 6rem;
+    }
+
+    // WIN TRIP
+    .win-trip-img img {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .text-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+} 
+
+@media (max-width: 1300px) {
+    // why no worky header h1?
+    .header-text {
+        font-size: 6rem;
+        margin-top: 5%;
+        
+    }
+    .yacht-img img {
+        position: absolute;
+        top: 6rem;
+        right: 0rem;
+        width: 90%;
+    }
+
+    // LINKS CONTAINER (new destinations, blog, community, get in touch)
+    .links-container {
+        .links {
+            padding-top: 5rem;
+
+            .items {
+                padding: 2rem;
+            }
+
+            .link-item h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    // FEATURES CONTAINER (OUR PROGRAM/NEW LOCATIONS)
+    .features-container {
+        .locations-box {
+            padding-right: 3rem;
+        }
+        .programs-box h3, .locations-box h3 {
+            font-size: 2rem;
+        }
+
+        .feat-img-1 img {
+            top: -6rem;
+            left: -2.5rem;
+        }
+
+        .feat-img-2 img {
+            bottom: -6rem;
+            right: -2.5rem;
+        }
+        // EXTRA VACATION DAYS?
+        .vacation-container {
+            .text-container {
+                margin-bottom: 4rem;
+            }
+        }
+        // WIN TRIP
+        .win-trip {
+            padding: 5rem 3rem;
+
+            .text-container {
+                padding-left: 4rem;
+                padding-right: rem;
+                // margin-bottom:;
+            }
+            
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    // header no worky
+    .header-text {
+        font-size: 6rem;
+        margin-top: 5%;
+    
+    }
+    
+    .yacht-img img {
+            position: absolute;
+            top: 11rem;
+            right: 0rem;
+            width: 80%;
+        }
+    
+    // LINKS CONTAINER (new destinations, blog, community, get in touch)
+    .links-container {
+        .links {
+            .items {
+                 padding: 1rem;
+            }
+        }
+    }
+
+    // FEATURES CONTAINER (OUR PROGRAM/NEW LOCATIONS)
+    .features-container {
+        .feat-img-1 img {
+            top: -2rem;
+            left: -2.5rem;
+        }
+    
+        .feat-img-2 img {
+            bottom: -1rem;
+            right: -2rem;
+        }
+    }
+
+    // EXTRA VACATION DAYS?
+    .vacation-container {
+        padding: 2rem;
+
+        .text-container {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .nav-bar-flex {
+        margin-top: -2rem;
+        margin-left: 6rem;
+        ul {
+            margin-top: 4rem;
+            
+            li {
+                padding: 2rem;
+            }
+        }
+    }
+    
+    .header-text {
+        margin-top: -21rem;
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            margin-left: 8rem;
+        }
+        
+        span {
+                display: inline-block;
+        }
+    }
+    .yacht-img {
+        display: none;
     }
 }
 
 // TABLET
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .wrapper {
         width: 80%;
     }
-    
+
     // HEADER NAV
+    .nav-bar-flex {
+        margin-left: 3rem;
+    }
     .header-text {
         text-align: center;
+        h1 {
+            margin-left: 5rem;
+            margin-top: 29rem;
+        }
     }
     .yacht-img {
         display: none;
+    }
+
+    // MAIN
+
+    // LINKS CONTAINER
+    .links-container {
+
+        .link-item {
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            p {
+                font-size: -1rem;
+            }
+        }  
+    }
+
+    // FEATURES CONTAINER
+    .feat-img-1, .feat-img-2 {
+        display: none;
+    }
+
+    // VACATIONS CONTAINER
+    .vacation-container {
+        padding-top: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    // WIN TRIP
+    .win-trip {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+
+        .win-trip-img {
+            margin-top: -1rem;
+        }
+
+        .text-container {
+            margin-top: 1rem;
+            h2 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+
+            button {
+                padding: 20px;
+            }
+        }
     }
 }
 
+
 // PHONE
-@media (max-width: 500px) {
-    // HEADER NAV
-    .header-text {
-        text-align: center;
+@media (max-width: 550px) {
+
+    .wrapper {
+            width: 90%;
     }
+    
+    // HEADER NAV
+    .nav-bar-flex {
+        margin-left: -2rem;
+    }
+    
+    .header-text {
+        margin-top: -19rem;
+        margin-left: -6rem;
+        h1 {
+           font-size: 2rem; 
+        }
+    }
+    
     .yacht-img {
         display: none;
+    }
+
+    // MAIN
+
+    // LINKS CONTAINER
+    .links {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+        .items {
+            width: 100%;
+        }
+    }
+
+    // VACATIONS CONTAINER
+    .vacation-container {
+        text-container {
+            p {
+                width: 90%;
+            }
+        }
+    }
+    .gallery-flex {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+           width: 100%;
+        }
     }
 }

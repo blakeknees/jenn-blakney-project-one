@@ -18,7 +18,7 @@
     
     <!-- Header Nav -->
     <header>
-        <section class="blog-nav">
+        <div class="blog-nav">
             <div class="flex wrapper">
                 <nav class="nav-bar-flex">
                     <ul>
@@ -28,17 +28,21 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            
-                <h1>Blog</h1>
-            
+                
+                <div class="flex">
+                    <div class="blog-header-text">
+                        <h1>Blog</h1>
+                    </div>
+                </div>
+                
             </div> <!-- END .flex .wrapper-->
-        </section> <!-- END .blog-nav -->
+        </div> <!-- END .blog-nav -->
     </header>
         
     <main>
 
         <!-- Content Container -->
-        <div class="flex">
+        <div class="content-flex">
             <section>
                 <aside>
                     <div class="blog-nav-container">
@@ -115,6 +119,9 @@
                     </div> <!-- END .text-container -->
                 </div> <!-- END .post-container -->
             </section> <!-- END Next Destination section -->
+        
+        
+        
         </div> <!-- END .flex -->
 
         <!-- COMMENT SECTION -->
@@ -146,18 +153,29 @@
                 </div> <!-- END .comment-2 -->
 
                 <!-- comment form -->
-                <form action="" class="submit-comment">
-                    <div class="name-email">
-                        <input type="text" placeholder="Name" id="name">
-                        <input type="email" placeholder="Email address" id="email">
-                    </div>
-                    <div class="comment">
-                        <textarea name="comment" placeholder="Comment" id="comment" cols="30" rows="10"></textarea>
-                        <!-- get rid of adjusting corner -->
-                    </div>
-                    <button type="submit">Post Comment</button>
-                </form>
+                <section class="comment-form">
+                    <form action="#" method="#" class="submit-comment" name="submit-comment">
+                        
+                        <div class="form-container flex">
+                            <div class="name-box">
+                                <input type="text" placeholder="Name" id="name">
+                            </div>
+                            
+                            <div class="email-box">
+                                <input type="email" placeholder="Email address" id="email">
+                            </div>
+                        </div> <!-- END .form-container -->
+                        
+                        <div class="message-box flex-column">
+                            <textarea name="userComment" placeholder="Comment" id="userComment" cols="30" rows="10" minlength="5" maxlength="200"></textarea>
+                            <!-- get rid of adjusting corner -->
+                            
+                            <button type="submit" class="post-comment"><a href="#">Post Comment</a></button>
+                        </div> <!-- END .message-box-->   
+                    </form>
+                </section>
             </div> <!-- END .comment-container-->
+            
         </section> <!-- END .comment-section-->
     </main>
 

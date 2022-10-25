@@ -1,6 +1,7 @@
 @use "./variables";
 @use "./global";
 
+// NOTE: ORIGINAL STYLES ARE SET FOR 1750PX MONITOR
 
 // OFFSET YACHT
 
@@ -24,6 +25,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-bottom: 5rem;
     }
 
     .items {
@@ -49,29 +51,20 @@
     background-color: variables.$background-2;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    justify-content: space-between;
 
     h3, p {
         color: white;
     }
 
-    .img-text-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .programs-box {
+        padding-left: 12rem;
     }
 
-    .feat-img-1,
-    .programs-box,
-    .feat-img-2,
     .locations-box {
-        min-width: 360px;
-        flex-basis: 50%;
-        flex-grow: 1;
-        }
-    
-    .locations-box {
-        justify-content: flex-end;
-    }
+        padding-right: 12rem;
+        text-align: right;
+     }
 
     .feat-img-1,
     .feat-img-2 {
@@ -83,15 +76,15 @@
         color: variables.$primary;
         top: -7.5rem;
         left: -7.5rem;
-        box-shadow: 10px 10px variables.$primary;
+        box-shadow: 20px 20px variables.$primary;
     }
     
     .feat-img-2 img {
         position: absolute;
         color: variables.$primary;    
         bottom: -7.5rem;
-        right: -7.5rem;
-        box-shadow: 10px 10px variables.$primary;
+        right: -7rem;
+        box-shadow: -20px 20px variables.$primary;
     }
 }
 
@@ -104,10 +97,7 @@
     padding-bottom: 8rem;
 
     .text-container {
-        display: flex;
-        flex-direction: column;
         padding: 30px 50px 50px 50px;
-        position: relative;
 
         h2 {
             color: variables.$secondary;
@@ -117,7 +107,20 @@
         p {
             color: black;
             text-align: center;
+            padding-left: 5rem;
+            padding-right: 5rem;
         }
+
+        .flex {
+            button {
+                justify-content: center;
+            }
+        }
+        button {
+            margin: 0 auto;
+            width: 20%;
+        }
+       
     }
 }
 
@@ -126,10 +129,10 @@
 .win-trip-container {
     background-color: variables.$background-1;
 
-    .win-trip-flex {
-        display: flex;
+    .win-trip {
+        // display: flex;
         justify-content: space-between;
-        padding: 2.5rem 0;
+        padding: 5rem 0;
     }
 
     .text-container {
@@ -141,23 +144,32 @@
 
         p {
             color: black;
-            margin: 25px 0;
+            // margin: 0 auto;
+        }
+
+        button {
+                margin: 20px auto;
+                display: block;
+            }
         }
     }
 
-    .cove-pic {
-        width: 100%
+    .cove-pic img {
+        width: 100%;
     }
 
     .win-trip-img {
         margin-right: 3rem;
+        
+        img {
+            box-shadow: -15px 15px variables.$primary;
+        }
     }
 
     .text-container p {
-        /* font-size: 1rem; */
         margin: 25px 0;
     }
-}
+
 
 // GALLERY OF BOAT PICS
 
@@ -173,7 +185,6 @@
 
     .gallery-flex li {
         width: calc((100% /3) - 30px);
-        // margin: 0 10px 20px;
     }
 }
 
