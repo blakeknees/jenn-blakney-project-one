@@ -833,7 +833,8 @@ header .flex .yacht-img {
   .links-container .link-item p {
     font-size: -1rem;
   }
-  .feat-img-1, .feat-img-2 {
+  FEATURES CONTAINER .feat-img-1,
+.feat-img-2 {
     display: none;
   }
   .vacation-container {
