@@ -21,6 +21,13 @@ p {
     font-size: 400;
 }
 
+fieldset,
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+}
+
 footer {
     background-color: variables.$primary;
     color: variables.$secondary;

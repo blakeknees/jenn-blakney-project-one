@@ -41,6 +41,7 @@
     <main>
         <!-- CONTACT INFO CONTAINER -->
         <div class="flex">
+
         <section class="contact-info-container">
                 <aside>
                     <div class="icons-email">
@@ -89,32 +90,30 @@
                     </div> <!-- END .icons.email-->
                 </aside>
                 
-            </section> <!-- END .contact-info-container -->
+        </section> <!-- END .contact-info-container -->
                 
+            <!-- FORM SECTION -->
                 <section class="form">
                     
-                    <form action="#" method="#" class="submit-message" name="subit-message">
+                    <form action="#" method="#" class="submit-message" name="submit-message">
 
-                        <div class="form-container flex">
+                        <!-- Name Box -->
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" placeholder="Name" id="name">
+                            
+                        <!-- Email Box -->
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" placeholder="Email address" id="email">
 
-                            <div class="name-box">
-                                <input type="text" placeholder="Name" id="name">
-                            </div>
-
-                            <div class="email-box">
-                                <input type="email" placeholder="Email address" id="email">
-                            </div>
-
-                        </div> <!-- END .form-container -->
-
-                        <div class="message-box flex-column">
-                            <textarea name="userMessage" placeholder="Message" id="userMessage" cols="30" rows="10" minlength="5" maxlength="200"></textarea>
-                                <!-- get rid of adjusting corner -->
-                            <button type="submit" class="submit-button"><a href="#">Submit</a></button>
-                        </div> <!-- END .message-box -->
+                        <!-- Message Area & Button -->
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
+                                
+                        <button class="submit-button">Submit</button>
+                        
                     </form>
                 </section> <!-- END .form -->
-            </div> <!-- END .flex .wrapper --> 
+        </div> <!-- END .flex .wrapper --> 
     </main>
     
     <!-- Footer -->
@@ -122,5 +121,6 @@
         <p>Copyright &copy; 2022 Juno College</p>
     </footer>
    
+    <script src="contact.js"></script>
 </body>
 </html>

@@ -46,8 +46,9 @@ header {
 main {
 // CONTACT INFO CONTAINER
     .flex {
-
-        // justify-content: space-between;
+        padding-bottom: 100px;
+        justify-content: space-between;
+        
         .icons-email {
             padding-top: 6rem;
             padding-left: 10rem;
@@ -78,70 +79,66 @@ main {
 
 
     // FORM
-    .form {
+    .submit-message {
         background-color: variables.$background-2;
-        width: 55%;
-        padding: 50px;
+        width: 60%;
+        padding: 100px 100px;
         box-shadow: 10px 10px variables.$primary;
-        transform: translate(-3rem, -15ex);
+        position: absolute;
+        bottom: -200px;
+        right: 50px;
+        // transform: translate(-3rem, -15ex);
 
-        .form-container {
-            justify-content: space-evenly;
-            align-items: center;
-            width: 90%;
+        input {
+            border-bottom: 2px solid variables.$primary;
+            margin-bottom: 15px;
+            color: variables.$tertiary;
+            background: transparent;
+            font-family: variables.$body-font;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            width: 45%;
 
-            input::placeholder {
-                font-size: 20px;
+            &::placeholder {
                 font-family: variables.$body-font;
                 color: variables.$tertiary;
-                font-weight: 400;
+                opacity: 1;
             }
-
-            input {
-                border-bottom: 2px solid variables.$primary;
-                background: transparent;
-                padding: 10px 20px;
-                width: 90%;
-            }
-
-            .name-box {}
-
         }
+        
+        textarea {
+            font-size: 20px;
+            font-family: variables.$body-font;
+            color: variables.$tertiary;
+            font-weight: 400;
+    
+            border: 2px solid variables.$primary;
+            background: transparent;
+    
+            width: 100%;
+            padding: 15px 20px;
+            margin: 5% 0;
 
-        .message-box {
-            padding: 20px;
-
-            textarea {
-                font-size: 20px;
-                font-family: variables.$body-font;
+            &::placeholder {
                 color: variables.$tertiary;
-                font-weight: 400;
-
-                border: 2px solid variables.$primary;
-                background: transparent;
-
-                resize: none;
-                width: 90%;
-                padding: 15px 20px;
-                margin-bottom: 2rem;
+                opacity: 1;
             }
+        }
+    
+        button {
+            background-color: variables.$primary;
+            color: variables.$secondary;
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px 35px;
+            border: none;
+            transition: .5s;
 
-            button {
-                font-size: 1rem;
-                width: 80%;
-                margin: 0 auto;
+            &:hover,
+            &:focus {
+                background-color: variables.$tertiary;
+                color: variables.$primary;
             }
         }
     }
-
 }
-
-
-
-
-
-
-
-
-
-
